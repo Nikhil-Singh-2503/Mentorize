@@ -1,72 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-   <!-- font awesome cdn link -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    
-   <!-- unicons link -->
-   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
-   <!-- custom css file link -->
-   <link rel="stylesheet" href="css/style.css">
+    <!-- unicons link -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
-   
-<!-- header section starts   -->
-<header class="header" id="header">
-    <nav class="nav container">
-        <a href="index.html" class="nav__logo">
-           <img src="image/Mentorize.png" alt="" class="nav__logo-img" width="100" height="50">
-        </a>
-        <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="#" class="nav__link active-link">Home</a>
-                </li>
 
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Courses</a>
-                </li>
+    <!-- header section starts   -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <img src="image/Mentorize.png" alt="" class="nav__logo-img">
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link active-link">Home</a>
+                    </li>
 
-                <li class="nav__item">
-                    <a href="#" class="nav__link">About</a>
-                </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Courses</a>
+                    </li>
 
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Dashboard</a>
-                </li>
-            </ul>
-            <div class="nav__close" id="nav-close">
-                <i class="uil uil-multiply"></i>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">About</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Dashboard</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="uil uil-multiply"></i>
+                </div>
+
+            </div>
+            <div class="nav__btns">
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-bars"></i>
+                </div>
+
+                <a href="#" class="nav__link sign__in-desktop">
+                    <i class="fa-solid fa-right-to-bracket"></i> Sign In
+                </a>
+
+                <a href="#" class="btn sign__in">
+                    <i class="fa-solid fa-right-to-bracket"></i>Sign In
+                </a>
+
+                <a href="#" class="btn get__started">Get Started</a>
+            </div>
+        </nav>
+        <div class="nav__overlay"  id="nav-overlay"></div>
+    </header>
+
+    <!-- Home section start -->
+    <section class="home">
+        <div class="home__container container grid">
+            <div class="home__data">
+                <h1 class="home__title">Find The Most Exciting Online Courses</h1>
+                <p class="home__description">Get mentored from best teachers in their respective domains and well
+                    prepared courses according to most latest pattern.
+                </p>
+                <div class="home__search">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass search__icon"></i>
+                    <input type="text" placeholder="Search your courses" class="search__input" />
+                    <button class="search__btn btn">Search</button>
+                </div>
+                <div class="home__info">
+                    <div class="info__item">
+                        <h4 class="info__no">630+</h4>
+                        <span class="info__title">Appreciations</span>
+                    </div>
+                    <div class="info__item">
+                        <h4 class="info__no">20+</h4>
+                        <span class="info__title">Mentors</span>
+                    </div>
+                    <div class="info__item">
+                        <h4 class="info__no">50+</h4>
+                        <span class="info__title">Courses</span>
+                    </div>
+                </div>
             </div>
 
+            <img src="image/Exams-bro.svg" alt="" class="home__img">
+
         </div>
-        <div class="nav__btns">
-            <div class="nav__toggles" id="nav-toggle">
-                <i class="uil uil-bars"></i> 
+    </section>
+
+<!-- Stats -->
+<section class="stats">
+    <div class="stats__container container grid">
+        <div class="stats__item">
+            <div class="stats__icon">
+                <i class="fa-sharp fa-solid fa-book-journal-whills"></i>
             </div>
-
-            <a href="#" class="nav__link sign__in-desktop">
-                <i class="fa-solid fa-right-to-bracket"></i> Sign In
-            </a>
-
-            <a href="#" class="btn sign__in">
-                <i class="fa-solid fa-right-to-bracket"></i>Sign In
-            </a>
-            
-            <a href="#" class="btn get__started">Get Started</a>
+            <div class="stats__data">
+                <h3 class="stats__title">50+ Courses</h3>
+                <p class="stats__description">
+                    Well prepared courses by Subject Matter Experts
+                </p>
+            </div>
         </div>
-    </nav>
+        <div class="stats__item">
+            <div class="stats__icon">
+                <i class="fa-solid fa-business-time"></i>
+            </div>
+            <div class="stats__data">
+                <h3 class="stats__title">Lifetime Access</h3>
+                <p class="stats__description">
+                 Subscribe to our courses and get lifetime access.
+                </p>
+            </div>
+        </div>
+        <div class="stats__item">
+            <div class="stats__icon">
+                <i class="fa-solid fa-user-shield"></i>
+            </div>
+            <div class="stats__data">
+                <h3 class="stats__title">1.5k+ Enrolled</h3>
+                <p class="stats__description">
+                   More than 1.5k+ Students have enrolled in our courses.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+</section>
 
-</header>
-
-<!-- header section ends -->
-
-
+<!-- javascript file link -->
+<script src="script.js"></script>
 </body>
+
 </html>
